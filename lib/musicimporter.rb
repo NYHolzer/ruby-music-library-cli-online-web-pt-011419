@@ -18,10 +18,13 @@ class MusicImporter
     mp3files
   end
   
+<<<<<<< HEAD
   def import 
     self.files.each do |filename|
       Song.create_from_filename(filename)
     end
   end 
   
+=======
+>>>>>>> a10832037efdeaef408171bd9797885aeea6d209
 end

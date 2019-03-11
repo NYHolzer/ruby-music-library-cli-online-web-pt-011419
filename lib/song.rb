@@ -40,6 +40,7 @@ class Song
   end 
   
   def self.new_from_filename (filename)
+<<<<<<< HEAD
     file = filename.split(/ - |[.]/)
     songname = file[1] 
     artname = Artist.find_or_create_by_name(file[0])
@@ -51,5 +52,8 @@ class Song
     song = self.new_from_filename(filename)
     song.save
     song
+=======
+    binding.pry
+>>>>>>> a10832037efdeaef408171bd9797885aeea6d209
   end 
 end
